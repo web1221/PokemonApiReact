@@ -1,12 +1,12 @@
 import React from 'react';
 import YourMom from './YourMom';
+import ORange from '../orange';
 
 export default function PokemonList() {
-    const list = new Array(1, 2, 3, 401, 402);
-    console.log(list);
+    const myRange = new ORange(1, 50);
     return (
         <div>
-            {list.map(e => {
+            {myRange.map(e => {
                 return <YourMom pokeid={e} />;
             })}
         </div>
